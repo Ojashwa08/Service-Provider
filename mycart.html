@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Cart - QuickFIxit</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #0056b3, #0077e6); 
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .top-navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0056b3; 
+            color: #fff;
+            padding: 10px 20px;
+            position: sticky; 
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .top-navbar .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .top-navbar .logo-img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+        }
+
+        .top-navbar .nav-links a {
+            color: #ffcc00; 
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+
+        .top-navbar .nav-links a:hover {
+            background-color: #003d80;
+        }
+
+        .cart-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .cart-box {
+            background-color: #ffffff22; 
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            text-align: center;
+            min-width: 300px;
+        }
+
+        .cart-box h2 {
+            margin-bottom: 20px;
+            color: #ffcc00;
+        }
+
+        .cart-box img {
+            margin-bottom: 15px;
+            border-radius: 10px;
+        }
+
+        .cart-box p {
+            margin: 8px 0;
+            font-size: 16px;
+        }
+
+        .cart-box a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #ffcc00;
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .cart-box a:hover {
+            background-color: #e6b800;
+            color: #003366;
+        }
+
+        footer {
+            background-color: #004494;
+            text-align: center;
+            padding: 10px 0;
+            color: #ffcc00;
+        }
+
+        hr {
+            border: 0.5px solid #ffffff55;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="top-navbar">
+    <div class="logo">
+        <img src="quickfixit_logo.png" alt="QuickFIxit Logo" class="logo-img">
+        <span>QuickFIxit</span>
+    </div>
+    <div class="nav-links">
+        <a href="index.html" class="back-home">Back to Home</a>
+    </div>
+    </nav>
+    <hr>
+
+    <div class="cart-container">
+        <div class="cart-box">
+            <h2>My Cart</h2>
+            <img src="empty_cart.jpg" width="100" height="100" alt="Empty Cart"> 
+            <p><b>Your cart is empty</b></p>
+            <p>Let's add some services</p>
+            <a href="services.html">Explore Services</a>
+        </div>
+    </div>
+
+    <hr>
+    <footer>
+        <p>© 2025 QuickFIxit. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+

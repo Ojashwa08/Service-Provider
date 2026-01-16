@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking - QuickFIxit</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #0056b3, #0077e6);
+      margin: 0;
+      padding: 0;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .top-navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #0056b3; 
+      color: #fff;
+      padding: 10px 20px;
+      position: sticky; 
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .top-navbar .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .top-navbar .logo-img {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+    }
+
+    .top-navbar .nav-links a {
+      color: #ffcc00; 
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 5px 10px;
+      border-radius: 4px;
+      transition: background 0.2s; 
+    }
+
+    .top-navbar .nav-links a:hover {
+      background-color: #003d80;
+    }
+
+    h1 {
+      text-align: center;
+      color: #ffcc00;   
+      margin: 25px 0 15px;
+    }
+
+    .booking-container {
+      width: 90%;
+      max-width: 600px;
+      margin: 20px auto 40px;
+      background: #ffffff22; 
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      color: #fff;
+    }
+
+    .booking-container label {
+      font-weight: bold;
+      display: block;
+      margin: 12px 0 6px;
+      color: #ffcc00; 
+    }
+
+    .booking-container input,
+    .booking-container textarea,
+    .booking-container select {
+      width: 100%;
+      padding: 12px;
+      border-radius: 6px;
+      border: none;
+      outline: none;
+      font-size: 15px;
+      box-sizing: border-box;
+      margin-bottom: 12px;
+    }
+
+    .booking-container button {
+      width: 100%;
+      padding: 14px;
+      background: #ffcc00;
+      border: none;
+      color: #0056b3;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .booking-container button:hover {
+      background: #e6b800;
+      color: #003366;
+    }
+
+    footer {
+      background-color: #004494;
+      text-align: center;
+      padding: 10px 0;
+      color: #ffcc00;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+    
+  <nav class="top-navbar">
+    <div class="logo">
+        <img src="quickfixit_logo.png" alt="QuickFIxit Logo" class="logo-img">
+        <span>QuickFIxit</span>
+    </div>
+    <div class="nav-links">
+        <a href="index.html" class="back-home">Back to Home</a>
+    </div>
+  </nav>
+
+  <h1>Book a Service</h1>
+
+  <div class="booking-container">
+    <form action="index.html" method="post">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="3" required></textarea>
+
+      <label for="service">Service Needed:</label>
+      <select id="service" name="service" required>
+        <option value="">-- Select a Service --</option>
+        <option value="appliance">Appliance Repair</option>
+        <option value="electrical">Electrical Work</option>
+        <option value="plumbing">Plumbing</option>
+        <option value="carpentry">Carpentry</option>
+        <option value="salon">Salon for Women</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="date">Preferred Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="time">Preferred Time:</label>
+      <input type="time" id="time" name="time" required>
+
+      <label for="payment">Payment Method (Optional):</label>
+      <select id="payment" name="payment">
+        <option value="">-- Select Payment Method --</option>
+        <option value="cash">Cash on Service</option>
+        <option value="online">Online Payment</option>
+        <option value="upi">UPI</option>
+      </select>
+
+      <button type="submit">Confirm Booking</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>© 2025 QuickFIxit. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
+

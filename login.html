@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - QuickFIxit</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #0056b3, #0077e6); 
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .top-navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0056b3; 
+            color: #fff;
+            padding: 10px 20px;
+            position: sticky; 
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .top-navbar .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .top-navbar .logo-img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+        }
+
+        .top-navbar .nav-links a {
+            color: #ffcc00; 
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+
+        .top-navbar .nav-links a:hover {
+            background-color: #003d80;
+        }
+        
+        .login-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .login-box {
+            background-color: #ffffff22; 
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            text-align: center;
+            min-width: 300px;
+        }
+
+        .login-box h2 {
+            margin-bottom: 20px;
+            color: #ffcc00;
+        }
+
+        .login-box input[type="email"],
+        .login-box input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 15px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .login-box input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #ffcc00;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .login-box input[type="submit"]:hover {
+            background-color: #e6b800;
+        }
+
+        .login-box p a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+
+        .login-box p a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #004494;
+            text-align: center;
+            padding: 10px 0;
+            color: #ffcc00;
+        }
+
+        hr {
+            border: 0.5px solid #ffffff55;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="top-navbar">
+    <div class="logo">
+        <img src="quickfixit_logo.png" alt="QuickFIxit Logo" class="logo-img">
+        <span>QuickFIxit</span>
+    </div>
+    <div class="nav-links">
+        <a href="index.html" class="back-home">Back to Home</a>
+    </div>
+    </nav>
+    <hr>
+
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Login</h2>
+            <form action="index.html" method="post">
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <input type="submit" value="Login">
+            </form>
+
+            <p>Don’t have an account? <a href="signup.html">Sign Up</a></p>
+            <p><a href="forgotpassword.html">Forgot Password?</a></p>
+        </div>
+    </div>
+
+    <hr>
+    <footer>
+        <p>© 2025 QuickFIxit. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

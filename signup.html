@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up - QuickFIxit</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #0056b3, #0077e6);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .top-navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0056b3; 
+            color: #fff;
+            padding: 10px 20px;
+            position: sticky; 
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .top-navbar .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .top-navbar .logo-img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+        }
+
+        .top-navbar .nav-links a {
+            color: #ffcc00; 
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+
+        .top-navbar .nav-links a:hover {
+            background-color: #003d80;
+        }
+
+        .signup-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .signup-box {
+            background-color: #ffffff22; 
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            text-align: center;
+            min-width: 350px;
+        }
+
+        .signup-box h2 {
+            margin-bottom: 20px;
+            color: #ffcc00;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 8px;
+        }
+
+        input[type="text"], input[type="email"], input[type="tel"], input[type="password"] {
+            width: 95%;
+            padding: 8px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+        }
+
+        input[type="submit"] {
+            background-color: #ffcc00;
+            color: #0056b3;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #e6b800;
+            color: #003366;
+        }
+
+        p a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+
+        p a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #004494;
+            text-align: center;
+            padding: 10px 0;
+            color: #ffcc00;
+        }
+
+        hr {
+            border: 0.5px solid #ffffff55;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="top-navbar">
+    <div class="logo">
+        <img src="quickfixit_logo.png" alt="QuickFIxit Logo" class="logo-img">
+        <span>QuickFIxit</span>
+    </div>
+    <div class="nav-links">
+        <a href="index.html" class="back-home">Back to Home</a>
+    </div>
+    </nav>
+    <hr>
+
+    <div class="signup-container">
+        <div class="signup-box">
+            <h2>Sign Up</h2>
+            <form action="index.html" method="post">
+                <table>
+                    <tr>
+                        <td><label for="fullname">Full Name:</label></td>
+                        <td><input type="text" id="fullname" name="fullname" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="email" id="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone">Phone:</label></td>
+                        <td><input type="tel" id="phone" name="phone" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password:</label></td>
+                        <td><input type="password" id="password" name="password" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="confirm">Confirm Password:</label></td>
+                        <td><input type="password" id="confirm" name="confirm" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <input type="submit" value="Sign Up">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+
+            <p>Already have an account? <a href="login.html">Login</a></p>
+        </div>
+    </div>
+
+    <hr>
+    <footer>
+        <p>© 2025 QuickFIxit. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

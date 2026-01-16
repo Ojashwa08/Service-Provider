@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - QuickFIxit</title>
+    <style>
+ 
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #0056b3, #0077e6);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        .top-navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0056b3; 
+            color: #fff;
+            padding: 10px 20px;
+            position: sticky; 
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .top-navbar .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .top-navbar .logo-img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+        }
+
+        .top-navbar .nav-links a {
+            color: #ffcc00; 
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+
+        .top-navbar .nav-links a:hover {
+            background-color: #003d80;
+        }
+
+        a.back-home {
+            display: inline-block;
+            margin: 15px 20px 0;
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a.back-home:hover {
+            text-decoration: underline;
+        }
+
+        .contact-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 30px 20px;
+        }
+
+        .contact-box {
+            background-color: #ffffff22;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        h1, h3 {
+            color: #ffcc00;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            margin-bottom: 15px;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        button {
+            background-color: #ffcc00;
+            color: #0056b3;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #e6b800;
+            color: #003366;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .social-links a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #004494;
+            text-align: center;
+            padding: 10px 0;
+            color: #ffcc00;
+            margin-top: auto;
+        }
+
+        hr {
+            border: 0.5px solid #ffffff55;
+        }
+    </style>
+</head>
+<body>
+
+  <nav class="top-navbar">
+    <div class="logo">
+        <img src="quickfixit_logo.png" alt="QuickFIxit Logo" class="logo-img">
+        <span>QuickFIxit</span>
+    </div>
+    <div class="nav-links">
+        <a href="index.html" class="back-home">Back to Home</a>
+    </div>
+  </nav>
+
+    <hr>
+
+    <div class="contact-container">
+        <div class="contact-box">
+            <h1>Contact Us</h1>
+
+            <h3>Our Office</h3>
+            <p>
+                QuickFIxit<br>
+                Bhopal, Madhya Pradesh, India<br>
+                <b>Phone:</b> +91-9876543210<br>
+                <b>Email:</b> support@quickfixit.com
+            </p>
+
+            <h3>Working Hours</h3>
+            <ul>
+                <li>Monday – Saturday: 9:00 AM – 8:00 PM</li>
+                <li>Sunday: Emergency Support Only</li>
+            </ul>
+
+            <h3>Get in Touch</h3>
+            <p>Have a question or need a quick service? Fill out the form below and our team will get back to you shortly.</p>
+
+            <form>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+                <label for="service">Service Needed:</label>
+                <select id="service" name="service">
+                    <option value="appliance">Appliance Repair</option>
+                    <option value="electrical">Electrical Work</option>
+                    <option value="plumbing">Plumbing</option>
+                    <option value="carpentry">Carpentry</option>
+                    <option value="office">Office Services</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Describe your issue..." required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+            <h3>Follow Us</h3>
+            <p class="social-links">
+                Stay connected with us for updates and offers:<br>
+                <a href="#">Facebook</a> | 
+                <a href="#">Instagram</a> | 
+                <a href="#">LinkedIn</a> | 
+                <a href="#">Twitter</a>
+            </p>
+        </div>
+    </div>
+
+    <hr>
+    <footer>
+        <p>© 2025 QuickFIxit. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
